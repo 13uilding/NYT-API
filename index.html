@@ -4,17 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous">
-  </script>
-    <title>Document</title>
+    <title>NYT Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     
+<div class="container-fluid">  
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">New York Times Search</a>
+    </nav>
+</div>
 
-    <script src="script.js">
-    </script>
+<div class="container-fluid card card-body">
+
+          <h5 class="card-title">Search Parameters</h5>
+
+    <form>
+        <div class="form-group">
+          <label for="searchInput">Search term(s):</label>
+          <input type="text" class="form-control" id="searchInput" placeholder="Enter your search text here:">
+        </div>
+
+        <div class="form-group">
+            <label for="numberSelect">Number of results to return:</label>
+            <select class="form-control" id="numberSelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startYear">Start Year (Optional):</label>
+            <input type="text" class="form-control" id="startYear" placeholder="ex.: 1900">
+          </div>
+
+          <div class="form-group">
+            <label for="endYear">End year (Optional):</label>
+            <input type="text" class="form-control" id="endYear" placeholder="ex.: 2019">
+          </div>
+
+          <button type="button" class="btn btn-outline-success">Submit</button>
+          <button type="button" class="btn btn-outline-danger">Clear fields</button>
+
+</div>
+
+<div class="container-fluid card card-body" id="topArticles">
+    <h5 class="card-title">Top Articles</h5>
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
